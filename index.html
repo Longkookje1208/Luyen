@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nhập Mật Khẩu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://github.com/Panbap/anh/blob/main/icon1.png?raw=true" type="image/png" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>NHẬP PASS ĐI NGƯỜI ĐẸP</h1>
+        <div class="content">
+            <div class="image-container">
+                <img src="./img/4.jpg" alt="Avatar" class="avatar" />
+                <div class="error-message" id="error-message"></div>
+            </div>
+            
+            <div class="input-container">
+                <input type="text" id="password" placeholder="••••••" readonly />
+                <div class="number-grid">
+                    <button onclick="addNumber('1')">1</button>
+                    <button onclick="addNumber('2')">2</button>
+                    <button onclick="addNumber('3')">3</button>
+                    <button onclick="addNumber('4')">4</button>
+                    <button onclick="addNumber('5')">5</button>
+                    <button onclick="addNumber('6')">6</button>
+                    <button onclick="addNumber('7')">7</button>
+                    <button onclick="addNumber('8')">8</button>
+                    <button onclick="addNumber('9')">9</button>
+                    <button onclick="checkPassword()" class="submit">✔</button>
+                    <button onclick="addNumber('0')" class="zero">0</button>
+                    <button onclick="clearPassword()" class="delete-btn">✖</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/login.js"></script>
+</body>
+
+</html>
